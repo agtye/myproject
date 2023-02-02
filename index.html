@@ -1,0 +1,135 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+ </head>
+ <body>
+        <div style="font-size: 100;">
+            <h1>Sby Personality test</h1>
+        </div>
+        <div style="background-color: lightblue;">
+            <h2>Free Personality Test</h2>
+            <p >What are you like? Take the test to learn more about your personality type. Discover your strengths, your downsides, what you’re like to work with and the types of careers you will be most successful in.</p>
+        </div>
+       <iframe src="iframe.html" frameborder="1"></iframe>
+       <ol>
+    	<li><strong>วิธีการให้ความสนใจกับผู้อื่น:</strong><br>
+            <div class="radio">
+                <label>
+	                <input type="radio" name="q1" value="e">
+                    ชอบพบปะผู้คน
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+	                <input type="radio" name="q1" value="i">
+    	            ชอบความสงบ
+                </label>
+            </div>
+        </li>
+
+    	<li><strong>วิธีการหาข้อมูลในการทำงานของคุณ:</strong><br>
+            <div class="radio">
+                <label>
+	                <input type="radio" name="q2" value="s">
+    	            เคร่งครัดในการหาข้อมูล 
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+	                <input type="radio" name="q2" value="n">
+    	            ไม่ค่อยเคร่งครัดในการหาข้อมูล
+                </label>
+            </div>
+        </li>
+
+    	<li><strong>วิธีการตัดสินใจโดยทั่วไป:</strong><br>
+            <div class="radio">
+                <label>
+	                <input type="radio" name="q3" value="f">
+    	            คำนึงถึงความรู้สึก
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+	                <input type="radio" name="q3" value="t">
+                    ยึดเหตุผลเป็นหลัก
+                </label>
+            </div>
+        </li>
+
+    	<li><strong>วิธีปฏิบัติงานและวิธีดำเนินงาน:</strong><br>
+            <div class="radio">
+                <label>
+	                <input type="radio" name="q4" value="p">
+    	            ชอบทำงานที่กำหนดไว้เพียงกว้างๆ
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+	                <input type="radio" name="q4" value="j">
+                    ชอบการทำงานที่มีขั้นตอนอย่างชัดเจน
+                </label>
+            </div>
+        </li>
+    </ol>
+    <p id="scroll-down" class="hidden text-center"></p>    
+	<p class="text-center"><button id="submit" class="btn btn-primary btn-lg">Results</button></p>
+
+    <div id="results" class="text-center hidden"> 
+    <span>
+        <br><br>
+		<h2 id="type"></h2>
+        <p id="type-details" class="type-description hidden">
+        	<strong id="type-title"></strong><br>
+            <strong><span id="type-percentage"></span> of population</strong><br>
+            <span id="type-description"></span><br>
+            <a id="type-site" href="#" target="_blank">Learn more about your type here</a>
+        </p>
+        <p class="pull-left"><span class="badge">E</span> (<span id="eScore"></span>%)</p>
+        <p class="pull-right">(<span id="iScore"></span>%) <span class="badge">I</span></p>
+        <div class="progress">
+        	<div id="eiChart" class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+            <div class="center-bar"></div>
+        </div>
+	    <br class="clearfix">
+        
+        <p class="pull-left"><span class="badge">S</span> (<span id="sScore"></span>%)</p>
+        <p class="pull-right">(<span id="nScore"></span>%) <span class="badge">N</span></p>
+        <div class="progress">
+        	<div id="snChart" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+            <div class="center-bar"></div>
+        </div>
+        <br class="clearfix">
+        
+        <p class="pull-left"><span class="badge">T</span> (<span id="tScore"></span>%)</p>
+        <p class="pull-right">(<span id="fScore"></span>%) <span class="badge">F</span></p>
+        <div class="progress">
+        	<div id="tfChart" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+            <div class="center-bar"></div>
+        </div>
+        <br class="clearfix">
+        
+        <p class="pull-left"><span class="badge">J</span> (<span id="jScore"></span>%)</p>
+        <p class="pull-right">(<span id="pScore"></span>%) <span class="badge">P</span></p>
+        <div class="progress">
+        	<div id="jpChart" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+            <div class="center-bar"></div>
+        </div>
+        <br class="clearfix">
+    </span>
+    </div>
+
+</div>
+    </div>
+    <script src="index.js"></script>
+
+</div>
+ </body>
+ </html>
