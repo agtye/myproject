@@ -1,22 +1,22 @@
 console.log("hello world");
 const MbtiModule = (function() {
 	let types = {
-		ISTJ: {title: "The Traditionalist", percentage: "13.7%", description: "Dutiful, Practical, Logical, Methodical", site: "http://www.personalitypage.com/html/ISTJ.html"},
-		ISFJ: {title: "The Protector", percentage: "12.7%", description: "Dutiful, Practical, Supportive, Meticulous", site: "http://www.personalitypage.com/html/ISFJ.html"},
-		INFJ: {title: "The Guide", percentage: "1.7%", description: "Devoted, Innovative, Idealistic, Compassionate", site: "http://www.personalitypage.com/html/INFJ.html"},
-		INTJ: {title: "The Visionary", percentage: "1.4%", description: "Independent, Innovative, Analytical, Purposeful", site: "http://www.personalitypage.com/html/INTJ.html"},
-		ISTP: {title: "The Problem-Solver", percentage: "6.4%", description: "Expedient, Practical, Objective, Adaptable", site: "http://www.personalitypage.com/html/ISTP.html"},
-		ISFP: {title: "The Harmonizer", percentage: "6.1%", description: "Tolerant, Realistic, Harmonious, Adaptable", site: "http://www.personalitypage.com/html/ISFP.html"},
-		INFP: {title: "The Humanist", percentage: "3.2%", description: "Insightful, Innovative, Idealistic, Adaptable", site: "http://www.personalitypage.com/html/INFP.html"},
-		INTP: {title: "The Conceptualizer", percentage: "2.4%", description: "Questioning, Innovative, Objective, Abstract", site: "http://www.personalitypage.com/html/INTP.html"},
-		ESTP: {title: "The Activist", percentage: "5.8%", description: "Energetic, Practical, Pragmatic, Spontaneous", site: "http://www.personalitypage.com/html/ESTP.html"},
-		ESFP: {title: "The Fun-Lover", percentage: "8.7%", description: "Spontaneous, Practical, Friendly, Harmonious", site: "http://www.personalitypage.com/html/ESFP.html"},
-		ENFP: {title: "The Enthusiast", percentage: "6.3%", description: "Optimistic, Innovative, Compassionate, Versatile", site: "http://www.personalitypage.com/html/ENFP.html"},
-		ENTP: {title: "The Entrepreneur", percentage: "2.8%", description: "Risk-Taking, Innovative, Outgoing, Adaptable", site: "http://www.personalitypage.com/html/ENTP.html"},
-		ESTJ: {title: "The Coordinator", percentage: "10.4%", description: "Organized, Practical, Logical, Outgoing", site: "http://www.personalitypage.com/html/ESTJ.html"},
-		ESFJ: {title: "The Supporter", percentage: "12.6%", description: "Friendly, Practical, Loyal, Organized", site: "http://www.personalitypage.com/html/ESFJ.html"},
-		ENFJ: {title: "The Developer", percentage: "2.8%", description: "Friendly, Innovative, Supportive, Idealistic", site: "http://www.personalitypage.com/html/ENFJ.html"},
-		ENTJ: {title: "The Reformer", percentage: "2.9%", description: "Determined, Innovative, Strategic, Outgoing", site: "http://www.personalitypage.com/html/ENTJ.html"}
+		ISTJ: {title: "นักคำนวณ", percentage: "13.7%", description: "ซื่อสัตย์ ปฏิบัติได้ มีเหตุผล มีระเบียบแบบแผน", site: "https://www.16personalities.com/th/istj-บุคคลิกภาพ"},
+		ISFJ: {title: "ผู้ตั้งรับ", percentage: "12.7%", description: "ซื่อสัตย์ ปฏิบัติ เกื้อกูล พิถีพิถัน", site: "https://www.16personalities.com/th/isfj-บคคลิกภาพ"},
+		INFJ: {title: "ผู้แนะนำ ", percentage: "1.7%", description: "อุทิศตน สร้างสรรค์ เพ้อฝัน มีความเห็นอกเห็นใจ", site: "https://www.16personalities.com/th/infj-บุคคลิกภาพ"},
+		INTJ: {title: "นักออกแบบ", percentage: "1.4%", description: "อิสระ สร้างสรรค์ วิเคราะห์ มีจุดมุ่งหมาย", site: "https://www.16personalities.com/th/intj-บุคคลิกภาพ"},
+		ISTP: {title: "ผู้เชี่ยวชาญด้านศิลปะ", percentage: "6.4%", description: "สะดวก ปฏิบัติ วัตถุประสงค์ ปรับใช้ได้", site: "https://www.16personalities.com/th/istp-บุคคลิกภาพ"},
+		ISFP: {title: "นักผจญภัย", percentage: "6.1%", description: "อดทน มีเหตุผล กลมกลืน ปรับเปลี่ยนได้", site: "https://www.16personalities.com/th/isfp-บุคคลิกภาพ"},
+		INFP: {title: "ผู้ไกล่เกลี่ย", percentage: "3.2%", description: "เฉียบแหลม สร้างสรรค์ เพ้อฝัน ปรับเปลี่ยนได้", site: "https://www.16personalities.com/th/infp-บุคคลิกภาพ"},
+		INTP: {title: "นักตรรกะ", percentage: "2.4%", description: "การตั้งคำถาม นวัตกรรม วัตถุประสงค์ นามธรรม", site: "https://www.16personalities.com/th/intp-บุคคลิกภาพ"},
+		ESTP: {title: "ผู้ประกอบการ", percentage: "5.8%", description: "กระฉับกระเฉง, ใช้งานได้จริง, ใช้งานได้จริง, เป็นธรรมชาติ", site: "https://www.16personalities.com/th/estp-บุคคลิกภาพ"},
+		ESFP: {title: "ผู้มอบความบันเทิง", percentage: "8.7%", description: "เป็นธรรมชาติ, ใช้งานได้จริง, เป็นมิตร, กลมเกลียว", site: "https://www.16personalities.com/th/esfp-บุคคลิกภาพ"},
+		ENFP: {title: "นักรณรงค์", percentage: "6.3%", description: "มองโลกในแง่ดี สร้างสรรค์ มีความเห็นอกเห็นใจ เก่งกาจ", site: "https://www.16personalities.com/th/enfp-บุคคลิกภาพ"},
+		ENTP: {title: "นักโต้วาที", percentage: "2.8%", description: "กล้าเสี่ยง สร้างสรรค์ ทันสมัย ​​ปรับตัวได้", site: "https://www.16personalities.com/th/entp-บุคคลืกภาพ"},
+		ESTJ: {title: "ผู้บริหาร", percentage: "10.4%", description: "จัดระเบียบ ปฏิบัติ ตรรกะ ขาออก", site: "https://www.16personalities.com/th/estj-บุคคลิกภาพ"},
+		ESFJ: {title: "ผู้ให้คำปรึกษา", percentage: "12.6%", description: "เป็นมิตร ใช้งานได้จริง ซื่อสัตย์ มีระเบียบ", site: "https://www.16personalities.com/th/esfj-บุคคลิกภาพ"},
+		ENFJ: {title: "ตัวเอก", percentage: "2.8%", description: "เป็นมิตร สร้างสรรค์ เกื้อกูล เพ้อฝัน", site: "https://www.16personalities.com/th/enfj-บคคลิกภาพ"},
+		ENTJ: {title: "ผู้บัญชาการ", percentage: "2.9%", description: "มุ่งมั่น สร้างสรรค์ มีกลยุทธ์ กล้าแสดงออก", site: "https://www.16personalities.com/th/entj-บุคคลิกภาพ"}
 	};
 	let e, i, s, n, t, f, j, p;
 	let type;
@@ -45,14 +45,14 @@ const MbtiModule = (function() {
 	}
 	
 	function calculatePercentages() {
-		e = Math.floor(e / 1 * 100);
-		i = Math.floor(i / 1 * 100);
-		s = Math.floor(s / 1 * 100);
-		n = Math.floor(n / 1 * 100);
-		t = Math.floor(t / 1 * 100);
-		f = Math.floor(f / 1 * 100);
-		j = Math.floor(j / 1 * 100);
-		p = Math.floor(p / 1 * 100);
+		e = Math.floor(e / 3.333 * 100);
+		i = Math.floor(i / 3.333 * 100);
+		s = Math.floor(s / 3.333 * 100);
+		n = Math.floor(n / 3.333 * 100);
+		t = Math.floor(t / 3.333 * 100);
+		f = Math.floor(f / 3.333 * 100);
+		j = Math.floor(j / 3.333 * 100);
+		p = Math.floor(p / 3.333 * 100);
 	}
 	
 	function createCharts() {
